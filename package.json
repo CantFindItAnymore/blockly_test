@@ -21,7 +21,9 @@
   },
   "dependencies": {
     "@ant-design/pro-layout": "^6.5.0",
+    "blockly": "^8.0.2",
     "react": "17.x",
+    "react-datepicker": "^4.8.0",
     "react-dom": "17.x",
     "umi": "^3.5.24"
   },
