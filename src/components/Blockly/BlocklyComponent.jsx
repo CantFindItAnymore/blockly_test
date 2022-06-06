@@ -47,6 +47,7 @@ const BlocklyComponent = ({ initialXml, children, ...rest }) => {
     if (initialXml) {
       Blockly.Xml.domToWorkspace(
         Blockly.Xml.textToDom(initialXml),
+
         workSpace.current.workspace,
       );
     }
@@ -56,7 +57,7 @@ const BlocklyComponent = ({ initialXml, children, ...rest }) => {
   const handelGetCode = () => {
     const code = BlocklyJS.workspaceToCode(workSpace.current.workspace);
 
-    console.log('当前代码//n', code);
+    console.log('当前代码\n', code);
   };
 
   return (

@@ -4,7 +4,8 @@ const defaultToolList = {
   contents: [
     {
       kind: 'category',
-      name: 'Control1',
+      colour: '#55efc4',
+      name: '控制',
       contents: [
         {
           kind: 'block',
@@ -12,20 +13,71 @@ const defaultToolList = {
         },
       ],
     },
+
     {
       kind: 'category',
-      name: 'Control2',
+      colour: '#81ecec',
+      name: '逻辑',
       contents: [
         {
           kind: 'block',
-          type: 'controls_ifelse',
+          type: 'logic_compare',
+        },
+        {
+          kind: 'block',
+          type: 'logic_operation',
+        },
+        {
+          kind: 'block',
+          type: 'logic_boolean',
         },
       ],
     },
 
     {
       kind: 'category',
-      name: 'Logic',
+      colour: '#74b9ff',
+      name: '事件',
+      contents: [
+        {
+          kind: 'block',
+          type: 'logic_compare',
+        },
+        {
+          kind: 'block',
+          type: 'logic_operation',
+        },
+        {
+          kind: 'block',
+          type: 'logic_boolean',
+        },
+      ],
+    },
+
+    {
+      kind: 'category',
+      colour: '#a29bfe',
+      name: '属性',
+      contents: [
+        {
+          kind: 'block',
+          type: 'logic_compare',
+        },
+        {
+          kind: 'block',
+          type: 'logic_operation',
+        },
+        {
+          kind: 'block',
+          type: 'logic_boolean',
+        },
+      ],
+    },
+
+    {
+      kind: 'category',
+      colour: '#ff7675',
+      name: '组件',
       contents: [
         {
           kind: 'block',

@@ -5,7 +5,12 @@ import styles from './index.less';
 export default function IndexPage() {
   return (
     <div className={styles.editor}>
-      <BlocklyComponent initialXml={''} />
+      <BlocklyComponent
+        initialXml={`
+        <xml>
+        <block type="controls_ifelse"></block>
+        </xml>`}
+      />
     </div>
   );
 }
