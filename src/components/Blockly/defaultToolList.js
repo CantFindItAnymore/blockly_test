@@ -4,12 +4,40 @@ const defaultToolList = {
   contents: [
     {
       kind: 'category',
+      colour: '#74b9ff',
+      name: '事件',
+      contents: [
+        {
+          kind: 'block',
+          type: 'component_did_mount',
+        },
+        {
+          kind: 'block',
+          type: 'on_handle_click',
+        },
+      ],
+    },
+
+    {
+      kind: 'category',
       colour: '#55efc4',
-      name: '控制',
+      name: '条件判断',
       contents: [
         {
           kind: 'block',
           type: 'controls_if',
+        },
+        {
+          kind: 'block',
+          type: 'logic_compare',
+        },
+        {
+          kind: 'block',
+          type: 'logic_operation',
+        },
+        {
+          kind: 'block',
+          type: 'logic_boolean',
         },
       ],
     },
@@ -17,79 +45,31 @@ const defaultToolList = {
     {
       kind: 'category',
       colour: '#81ecec',
-      name: '逻辑',
+      name: '操作',
       contents: [
         {
           kind: 'block',
-          type: 'logic_compare',
+          type: 'update_attr',
         },
         {
           kind: 'block',
-          type: 'logic_operation',
+          type: 'send_request',
         },
         {
           kind: 'block',
-          type: 'logic_boolean',
+          type: 'push_location',
         },
       ],
     },
 
     {
       kind: 'category',
-      colour: '#74b9ff',
-      name: '事件',
+      colour: '#e17055',
+      name: '值',
       contents: [
         {
           kind: 'block',
-          type: 'logic_compare',
-        },
-        {
-          kind: 'block',
-          type: 'logic_operation',
-        },
-        {
-          kind: 'block',
-          type: 'logic_boolean',
-        },
-      ],
-    },
-
-    {
-      kind: 'category',
-      colour: '#a29bfe',
-      name: '属性',
-      contents: [
-        {
-          kind: 'block',
-          type: 'logic_compare',
-        },
-        {
-          kind: 'block',
-          type: 'logic_operation',
-        },
-        {
-          kind: 'block',
-          type: 'logic_boolean',
-        },
-      ],
-    },
-
-    {
-      kind: 'category',
-      colour: '#ff7675',
-      name: '组件',
-      contents: [
-        {
-          kind: 'block',
-          type: 'logic_compare',
-        },
-        {
-          kind: 'block',
-          type: 'logic_operation',
-        },
-        {
-          kind: 'block',
-          type: 'logic_boolean',
+          type: 'get_current_params',
         },
       ],
     },

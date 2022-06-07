@@ -8,7 +8,8 @@ export default function IndexPage() {
       <BlocklyComponent
         initialXml={`
         <xml>
-        <block type="controls_ifelse"></block>
+        <block type="component_did_mount">
+        </block>
         </xml>`}
       />
     </div>

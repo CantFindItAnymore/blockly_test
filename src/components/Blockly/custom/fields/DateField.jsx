@@ -17,7 +17,7 @@ class ReactDateField extends BlocklyReactField {
   };
 
   getText_() {
-    return this.value_.toLocaleDateString();
+    return this.value.toLocaleDateString();
   }
 
   fromXml(fieldElement) {
@@ -27,7 +27,7 @@ class ReactDateField extends BlocklyReactField {
   render() {
     return (
       <DatePicker
-        selected={this.value_}
+        selected={this.value}
         onChange={this.onDateSelected_}
         inline
       />

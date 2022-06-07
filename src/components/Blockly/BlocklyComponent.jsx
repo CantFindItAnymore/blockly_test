@@ -57,7 +57,12 @@ const BlocklyComponent = ({ initialXml, children, ...rest }) => {
   const handelGetCode = () => {
     const code = BlocklyJS.workspaceToCode(workSpace.current.workspace);
 
-    console.log('当前代码\n', code);
+    console.log(
+      '当前代码\n',
+      `export default {
+      ${code}
+    }`,
+    );
   };
 
   return (
