@@ -60,8 +60,15 @@ const onHandleClick = {
       name: 'clickUid',
     },
   ],
-  message1: '被点击时 %1',
+  message1: '%1时',
   args1: [
+    {
+      type: 'input_statement',
+      name: 'eventType',
+    },
+  ],
+  message2: '%1',
+  args2: [
     {
       type: 'input_statement',
       name: 'onHandleClickEvent',
@@ -79,10 +86,10 @@ Blockly.Blocks['on_handle_click'] = {
   },
 };
 
-// 【操作】更新组件属性
+// 【操作】更新组件数据
 const UpdateAttr = {
   type: 'update_attr',
-  message0: '更新uid为 %1 的组件的 %2 属性 为 %3',
+  message0: '更新uid为 %1 的组件的 %2 数据 为 %3',
   args0: [
     {
       type: 'field_input',
@@ -160,6 +167,7 @@ Blockly.Blocks['get_current_params'] = {
     this.setStyle('loop_blocks');
   },
 };
+
 // 【操作】跳转
 const PushLocation = {
   type: 'push_location',

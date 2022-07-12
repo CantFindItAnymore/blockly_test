@@ -6,11 +6,11 @@ export default function IndexPage() {
   return (
     <div className={styles.editor}>
       <BlocklyComponent
-        initialXml={`
-        <xml>
-        <block type="component_did_mount">
-        </block>
-        </xml>`}
+      // initialXml={`
+      // <xml>
+      // <block type="component_did_mount">
+      // </block>
+      // </xml>`}
       />
     </div>
   );

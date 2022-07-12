@@ -10,7 +10,7 @@ import defaultToolList from './defaultToolList';
 import './custom/blocks/customblocks';
 import './custom/generator/generator';
 
-Blockly.setLocale(locale);
+Blockly.setLocale(locale); // 汉化
 
 const BlocklyComponent = ({ initialXml, children, ...rest }) => {
   const workSpace = useRef();
