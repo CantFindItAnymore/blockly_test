@@ -22,6 +22,10 @@
   "dependencies": {
     "@ant-design/pro-layout": "^6.5.0",
     "blockly": "^8.0.2",
+    "echarts": "^5.3.3",
+    "echarts-wordcloud": "^2.0.0",
+    "element-resize-event": "^3.0.6",
+    "ol": "^7.1.0",
     "react": "17.x",
     "react-datepicker": "^4.8.0",
     "react-dom": "17.x",

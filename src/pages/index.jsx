@@ -1,17 +1,9 @@
-import { useState, useEffect, useRef } from 'react';
-import BlocklyComponent from '../components/Blockly';
-import styles from './index.less';
-
-export default function IndexPage() {
+import React from 'react';
+import MapWrapper from '@/components/MapWrapper';
+export default function index() {
   return (
-    <div className={styles.editor}>
-      <BlocklyComponent
-      // initialXml={`
-      // <xml>
-      // <block type="component_did_mount">
-      // </block>
-      // </xml>`}
-      />
+    <div>
+      <MapWrapper />
     </div>
   );
 }
